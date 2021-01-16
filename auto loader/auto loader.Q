@@ -28,7 +28,6 @@ UserVar path=0 "路徑"
 UserVar ApSoFileName=0 "ap/so檔案名稱"
 UserVar downloadFileName="App.mci" "downloadFileName"
 UserVar closeMsgBoxFlag = DropList{"是":1|"否":0}=0 "是否關閉提醒"
-UserVar downloadDelayTime = 5 "signDelayTime sec"
 
 If path = 0 Then 
 	MessageBox "請設置路徑"
@@ -99,7 +98,12 @@ bk = Plugin.Window.Foreground()
 Call Plugin.Window.Move(bk, 1220, 519)
 
 //6...download set path
-Delay downloadDelayTime * 1000 //wait for sign
+Delay 3000
+Dim rtn
+rtn = 1
+Do Until rtn = 0
+	rtn = colorSafer_rtn(1695, 318, "D77800")//wait sign
+Loop
 
 Call leftClickPos(1876, 746)
 Delay 500
@@ -149,4 +153,11 @@ Function downloaderSafer()
 	End If
 End Function
 
+Function colorSafer_rtn(posX, posY, safeColor)
+	IfColor posX, posY, safeColor, 1 Then
+		colorSafer_rtn = 1
+	Else 
+		colorSafer_rtn = 0
+	End If
+End Function
 
