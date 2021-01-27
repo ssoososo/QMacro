@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=2053c3ed-0aee-45d1-8838-d8a9851df7ed
 Description=pdf reader translater
-Enable=0
+Enable=1
 AutoRun=0
 [Repeat]
 Type=0
@@ -23,7 +23,7 @@ SetupOCXFile=
 [Comment]
 
 [Script]
-Const delayTime = 60
+UserVar delayTime=10 "delayTime"
 
 LockMouse
 SaveMousePos

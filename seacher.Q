@@ -8,8 +8,8 @@ StopHotkey=123
 StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
-MacroID=9e34f91b-ded4-442a-87fe-7efa94c0db13
-Description=pdf reader translater without reformat
+MacroID=04740c1d-cfb7-4aa9-99c0-8663004e4369
+Description=seacher
 Enable=1
 AutoRun=0
 [Repeat]
@@ -30,13 +30,12 @@ SaveMousePos
 
 //paste to translate page
 Call hotKey("Ctrl", "C")
-Call leftClickPos(1685, 146)
-
-
-Call leftClickPos(1160, 346)
-Call hotKey("Ctrl", "A")
-Call hotKey("Ctrl", "V")
+Clipboard = Plugin.Sys.GetCLB()
 Call hotKey("Alt", "Tab")
+
+Call hotKey("Ctrl", "F")
+Call hotKey("Ctrl", "V")
+KeyPress "Enter", 1
 
 
 RestoreMousePos

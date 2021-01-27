@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=4bfd385e-473c-436c-8380-f07265675adc
 Description=auto loader absolute_FrenchSys
-Enable=0
+Enable=1
 AutoRun=0
 [Repeat]
 Type=0

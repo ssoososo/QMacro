@@ -1,6 +1,6 @@
 [General]
 SyntaxVersion=2
-BeginHotkey=0
+BeginHotkey=117
 BeginHotkeyMod=0
 PauseHotkey=0
 PauseHotkeyMod=0
@@ -8,8 +8,8 @@ StopHotkey=123
 StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
-MacroID=414e3ef1-0bab-452c-8c8e-6bb5163ff252
-Description=auto loader
+MacroID=c456c411-a390-4649-9786-4db0f0a2bd3e
+Description=auto loader_FrenchSys on branch
 Enable=1
 AutoRun=0
 [Repeat]

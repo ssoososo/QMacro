@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=347df690-7d08-486f-b804-6626a27b4f0b
 Description=auto loader absolute_contactless so
-Enable=0
+Enable=1
 AutoRun=0
 [Repeat]
 Type=0

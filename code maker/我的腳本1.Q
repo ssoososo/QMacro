@@ -1,6 +1,7 @@
 [General]
+MacroID=65a34e6d-1c44-4ad9-baae-3c121b9909f0
 SyntaxVersion=2
-BeginHotkey=112
+BeginHotkey=121
 BeginHotkeyMod=0
 PauseHotkey=0
 PauseHotkeyMod=0
@@ -8,9 +9,8 @@ StopHotkey=123
 StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
-MacroID=9e34f91b-ded4-442a-87fe-7efa94c0db13
-Description=pdf reader translater without reformat
-Enable=1
+Description=§Úªº¸}¥»1
+Enable=0
 AutoRun=0
 [Repeat]
 Type=0
@@ -23,24 +23,25 @@ SetupOCXFile=
 [Comment]
 
 [Script]
-UserVar delayTime=10 "delayTime"
+Const delayTime = 20
 
-LockMouse
-SaveMousePos
+
 
 //paste to translate page
 Call hotKey("Ctrl", "C")
-Call leftClickPos(1685, 146)
+Call hotKey("Ctrl", "E")
+KeyPress "Enter", 1
+KeyPress "Up", 1
+KeyPress "Tab", 1
 
-
-Call leftClickPos(1160, 346)
-Call hotKey("Ctrl", "A")
+SayString ("memcpy(destination.")
 Call hotKey("Ctrl", "V")
-Call hotKey("Alt", "Tab")
+
+SayString (", source.")
+Call hotKey("Ctrl", "V")
+SayString (", );")
 
 
-RestoreMousePos
-UnlockMouse 
 
 
 Function hotKey(key1, key2)
